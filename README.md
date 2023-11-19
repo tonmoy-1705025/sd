@@ -19,8 +19,8 @@ https://rubyinstaller.org/add-ons/devkit.html
    
 # Soft Delete Implementation
 1. Open the generated "app/models/item.rb" file and replace the code
-   <code>
-     # app/models/item.rb
+
+   ```
       class Item < ApplicationRecord
         validates :name, presence: true
       
@@ -37,7 +37,7 @@ https://rubyinstaller.org/add-ons/devkit.html
         # Default scope to exclude soft-deleted items
         default_scope -> { where(deleted_at: nil) }
       end
-   </code>
+   ```
 
 
 
