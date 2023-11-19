@@ -48,9 +48,9 @@ Open the generated "app/models/item.rb" file and replace the code: <br>
   end
   ```
 2. Install the gems:<br>
-   <code>bundle install</code>
+   <code>bundle install</code><be>
 3. Generate RSpec configuration files:<br>
-  <code>rails generate rspec:installcode>
+  <code>rails generate rspec:installcode><be>
 4. Generate an RSpec file for the Item model:<br>
   <code>rails generate rspec:model Item</code>
 # Implement RSpec tests:
