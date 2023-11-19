@@ -14,8 +14,8 @@ https://rubyinstaller.org/add-ons/devkit.html
    <code>rails generate model Item name:string deleted_at:datetime</code>
 
 6. Run the database migration to create the "items" table in the database:<br>
-   <code>rails db:migrate</code><br>
-   <code>RAILS_ENV=test rails db:migrate</code>
+   a.<code>rails db:migrate</code><br>
+   b.<code>RAILS_ENV=test rails db:migrate</code>
    
 # Soft Delete Implementation
 Open the generated "app/models/item.rb" file and replace the code: <br>
@@ -53,7 +53,6 @@ Open the generated "app/models/item.rb" file and replace the code: <br>
   <code>rails generate rspec:installcode>
 4. Generate an RSpec file for the Item model:<br>
   <code>rails generate rspec:model Item</code>
-
 # Implement RSpec tests:
   ```
   # spec/models/item_spec.rb
@@ -88,10 +87,6 @@ Open the generated "app/models/item.rb" file and replace the code: <br>
 
 # You are done! And run the test 
 <code>rspec</code>
-
-
-
-
 
 
 
