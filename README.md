@@ -41,18 +41,19 @@ Open the generated "app/models/item.rb" file and replace the code: <br>
 
 
 # Testing with RSpec 
-1.Open your application's Gemfile and add the following lines to include the necessary testing gems:
+1. Open your application's Gemfile and add the following lines to include the necessary testing gems:
   ```
   group: development, : test do
     gem 'rspec-rails'
   end
   ```
-2.Install the gems:<br>
+2. Install the gems:<br>
    <code>bundle install</code><br>
-3.Generate RSpec configuration files:<br>
-  <code>rails generate rspec:installcode>
-4.Generate an RSpec file for the Item model:<br>
+3. Generate RSpec configuration files:<br>
+  <code>rails generate rspec:install</code>
+4. Generate an RSpec file for the Item model:<br>
   <code>rails generate rspec:model Item</code>
+  
 # Implement RSpec tests:
   ```
   # spec/models/item_spec.rb
